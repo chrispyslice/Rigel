@@ -48,6 +48,10 @@ li
 {
 	padding-left: 10px;
 }
+#titleBar
+{
+	margin-left: 20px;
+}
 #logo
 {
 	float: left;
@@ -83,6 +87,7 @@ li
 	margin: 0 auto;
 	border: 2px;
 	padding: 5px;
+	height: auto;
 	background-color: #bee79d;
 	border: 2px solid #346825;
 	border-radius: 5px;
@@ -93,6 +98,9 @@ li
 .shadow
 {
 	box-shadow: 3px 3px 4px #000;
+}
+.clickable {
+   cursor: pointer;
 }
 #innerContainer
 {
@@ -117,9 +125,10 @@ li
 }
 #regTab, #loginTab
 {
-	width: 50%;
-	display: inline;
-	background-color: #ffffff;	
+	width: 49%;
+	display: inline-block;
+	background-color: #eeffe9;
+	text-align: center;	
 }
 #register
 {

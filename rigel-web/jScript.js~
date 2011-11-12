@@ -1,11 +1,11 @@
 
  $(document).ready(function() {
- 	$('#toggleLog').submit(function(e) {
-			//$("#regReq").css('display', 'none');
-			//$("#register").css('display', 'block');
-			$('#register').toggle(500);
-			$('#login').toggle(500);		
-			
-			return false;
+	$('#regTab').click(function() {
+		$('#login').fadeOut(500);
+		$('#register').delay(500).fadeIn(500);
+	});
+	$('#loginTab').click(function() {
+		$('#register').fadeOut(500);
+		$('#login').delay(500).fadeIn(500);
 	});
  });
