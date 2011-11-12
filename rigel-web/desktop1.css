@@ -31,10 +31,6 @@ p
 {
 	font-size: 20px;
 }
-div 
-{
-	margin: 20px;
-}
 nav
 {
 	
@@ -67,27 +63,35 @@ li
 	border: 2px solid #346825;
 	border-radius: 8px;
 }
-#loginBox
-{
-	float: right;
-	width: 280px;
-	text-align: right;
-	padding:20px;
-	background-color: #bee79d;
-	border: 2px solid #346825;
-	border-radius: 5px;	
-}
 #smallDescr
 {
-	width: 280px;
-	float: left;
+	width: 40%;
+	margin: 0 auto;
+	border: 2px;
+	padding: 5px;
 	background-color: #bee79d;	
 	border: 2px solid #346825;
-	border-radius: 5px;	
+	border-radius: 5px;
+	display: inline-block;
 }
+#loginBox
+{
+	width: 40%;
+	margin: 0 auto;
+	border: 2px;
+	padding: 5px;
+	background-color: #bee79d;
+	border: 2px solid #346825;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: right;
+}
+
 #innerContainer
 {
 	height: 100%;
+	width: 95%;
+	margin: 10px auto;
 }
 #aboutUs
 {
@@ -106,7 +110,6 @@ li
 }
 #toggleLog
 {
-	float: left;
 }
 #loginTab
 {
