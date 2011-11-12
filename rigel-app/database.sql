@@ -1,68 +1,48 @@
 delimiter $$
 
+CREATE TABLE `theme` (
+  `id` int(11) NOT NULL,
+  `css_file` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
+
+delimiter $$
+
 CREATE TABLE `user` (
-  `user_id` int(11) NOT NULL,
-  `user_name` varchar(30) NOT NULL,
-  `user_email` varchar(45) NOT NULL,
-  `user_avatar` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`user_id`),
-  UNIQUE KEY `user_email_UNIQUE` (`user_email`),
-  UNIQUE KEY `user_avatar_UNIQUE` (`user_avatar`)
+  `id` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `avatar` varchar(50) DEFAULT NULL,
+  `theme_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_email_UNIQUE` (`email`),
+  UNIQUE KEY `user_avatar_UNIQUE` (`avatar`),
+  KEY `user_theme` (`theme_id`),
+  KEY `user_theme_themeId` (`theme_id`),
+  CONSTRAINT `user_theme_themeId` FOREIGN KEY (`theme_id`) REFERENCES `theme` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
 
 delimiter $$
 
 CREATE TABLE `group` (
-  `group_id` int(11) NOT NULL,
-  `group_name` varchar(45) NOT NULL,
-  `group_description` varchar(100) NOT NULL,
-  PRIMARY KEY (`group_id`)
+  `id` int(11) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `description` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
 
 delimiter $$
 
 CREATE TABLE `group_member` (
-  `group_member_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `group_id` int(11) NOT NULL,
-  PRIMARY KEY (`group_member_id`),
+  PRIMARY KEY (`id`),
   KEY `group_id` (`group_id`),
   KEY `user_id` (`user_id`),
-  CONSTRAINT `group_id` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `user_groupMember_userId` (`user_id`),
+  KEY `group_groupMember_groupId` (`group_id`),
+  CONSTRAINT `user_groupMember_userId` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `group_groupMember_groupId` FOREIGN KEY (`group_id`) REFERENCES `group` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
-
-delimiter $$
-
-CREATE TABLE `expences` (
-  `expences_id` int(11) NOT NULL,
-  `group_member_id` int(11) NOT NULL,
-  `group_id` int(11) NOT NULL,
-  `description` varchar(100) NOT NULL,
-  `amount` float NOT NULL,
-  PRIMARY KEY (`expences_id`),
-  KEY `group_member_id` (`group_member_id`),
-  KEY `group_id` (`group_id`),
-  CONSTRAINT `group_member_id_expences` FOREIGN KEY (`group_member_id`) REFERENCES `group_member` (`group_member_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `group_id_expences` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1$$delimiter $$
-
-
-delimiter $$
-
-CREATE TABLE `theme` (
-  `theme_id` int(11) NOT NULL,
-  `css_file` varchar(50) NOT NULL,
-  PRIMARY KEY (`theme_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
-
-CREATE TABLE `user_theme` (
-  `user_id` int(11) NOT NULL,
-  `theme_id` int(11) NOT NULL,
-  KEY `user_id_user_theme` (`user_id`),
-  KEY `theme_id_user_theme` (`theme_id`),
-  CONSTRAINT `user_id_user_theme` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `theme_id_user_theme` FOREIGN KEY (`theme_id`) REFERENCES `theme` (`theme_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
-
 
