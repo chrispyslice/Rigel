@@ -87,6 +87,10 @@ li
 	text-align: right;
 }
 
+.shadow
+{
+	box-shadow: 3px 3px 4px #000;
+}
 #innerContainer
 {
 	height: 100%;

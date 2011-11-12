@@ -10,16 +10,16 @@
 		<div id="container">
 			<header>
 				<a id="logo" href="index.html">
-					<img src="logo4.png" width="100" height="100" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
+					<img src="logo64.png" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
 				</a>
-				<img src="priceSplitterTitle.gif" alt="PriceSplitter" title="PriceSplitter Logo" />
+				<img src="PriceSplittersTitle.png" alt="PriceSplitter" title="PriceSplitter Logo" />
 			</header>
-			<nav>
+			<nav class="shadow">
 				<a href='index.html'>Home</a>
 				<a href='about.html'>About</a>
 			</nav>
 			<div id="innerContainer">
-				<div id="smallDescr" title="Description of PriceSplitter">
+				<div id="smallDescr" class="shadow" title="Description of PriceSplitter">
 					<ul id="featureList">
 						<li> Join groups! </li>
 						<li> Record joint expenditure! </li>
@@ -33,7 +33,7 @@
 						<li> Visualise clearly how to balance accounts! </li>
 					</ul>
 				</div>
-				<div id="loginBox" title="Login to PriceSplitter">
+				<div id="loginBox" title="Login to PriceSplitter" class="shadow">
 					<form id="toggleLog">
   						<input id='loginTab' type="submit" name="login" value="Log in" />
   						<input id='regTab' type="submit" name="register" value="Register"/><br/><br/>
