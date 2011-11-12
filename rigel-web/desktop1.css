@@ -20,6 +20,7 @@ h1
 	float: left;
 	font-family: "Times New Roman", serif;
 	font-size: 24px;
+	padding-top:10px;
 }
 p
 {
@@ -33,7 +34,8 @@ div
 nav
 {
 	clear: both;
-	border: thin solid;
+	border-top: thin solid;
+	border-bottom: thin solid;
 	padding: 5px;
 }
 li
