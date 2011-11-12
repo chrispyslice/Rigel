@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="desktop1.css" type="text/css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="jScript.js"></script>
 		<title>PriceSplitter!</title>
 	</head>
 	<body>
@@ -34,12 +36,23 @@
 				<div id="loginBox" title="Login to PriceSplitter">
 					<form id="Login">
 						<label>Email: </label>
-						<input type="text" name="username" value="example@email.com"/><br/>
+						<input type="text" name="username" value="example@email.com" onfocus="value=''"/><br/>
 						<label>Password: </label>
-						<input type="password" name="password"/><br />
+						<input type="password" name="password" value="password" onfocus="value=''"/><br />
   						<input type="submit" name="submit" value="Log In!" /><br/><br/>
+  					</form>
+  					<form id="regReq">
   						<label>Don't have an account?</label>
-  						<input type="submit" name="register" value="Register Now!" />
+  						<input type="submit" name="register" value="Register Now!" /><br/>
+					</form>
+					<form id="register">
+						<label>Name: </label>
+						<input type="text" name="name" value="Rigel" onfocus="value=''"/><br/>
+						<label>Email: </label>
+						<input type="text" name="username" value="example@email.com" onfocus="value=''"/><br/>
+						<label>Password: </label>
+						<input type="password" name="password" value="password" onfocus="value=''"/><br />
+  						<input type="submit" name="register" value="Register!" /><br/>
 					</form>
 				</div>
 			</div>
