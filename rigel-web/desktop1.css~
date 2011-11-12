@@ -34,7 +34,8 @@ div
 nav
 {
 	clear: both;
-	border: thin solid;
+	border-top: thin solid;
+	border-bottom: thin solid;
 	padding: 5px;
 }
 li
