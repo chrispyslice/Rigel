@@ -12,7 +12,7 @@ header
 } 
 body
 {
-	background-color: #ffffff;
+	background-color: #f6fff3;
 	
 }
 h1
@@ -33,11 +33,15 @@ div
 }
 nav
 {
+	
+	background-color: #bee79d;
+	width: 95%;
+	margin: auto;
 	clear: both;
 	border-top: thin solid;
 	border-bottom: thin solid;
 	padding: 5px;
-	border: 2px solid #000000;
+	border: 2px solid #346825;
 	border-radius: 25px;
 }
 li
@@ -52,8 +56,10 @@ li
 {
 	margin: 20px auto;
 	width: 90%;	
-	background-color: #E4FFE3;
+	background-color: #c9f4a6;
 	height: 100%;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 #loginBox
 {
@@ -73,7 +79,7 @@ li
 footer
 {
 	border-top: thin solid;
+	border-color: #346825;
 	text-align: center;
 	clear: both;
-	max-width: 90%;
 }
