@@ -30,13 +30,17 @@ div
 #container 
 {
 	margin: 20px auto;
-	width: 80%;
-	background-color: #DBF7DA;
+	width: 80%;	
+	background-color: #95F590;
 }
 #loginBox
 {
+	width: 280px;
+	text-align: right;	
+}
+#innerContainer
+{
 	width: 300px;
-	text-align: right;
 }
 footer
 {
