@@ -5,7 +5,12 @@ html
 }
 a
 {
-	padding: 10px;
+	padding: 5px;
+	margin-left:20px;
+}
+a:hover
+{
+	background-color: #eeffe9;
 }
 header
 {
@@ -75,7 +80,6 @@ li
 {
 	width: 280px;
 	float: left;
-	height: 400px;
 	background-color: #bee79d;	
 	border: 2px solid #346825;
 	border-radius: 25px;	
@@ -83,6 +87,13 @@ li
 #innerContainer
 {
 	height: 100%;
+}
+#aboutUs
+{
+	padding:20px;
+	background-color: #bee79d;	
+	border: 2px solid #346825;
+	border-radius: 25px;	
 }
 footer
 {

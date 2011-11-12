@@ -11,16 +11,25 @@
 					<img src="logo4.png" width="100" height="100" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
 				</a>
 				<h1> PriceSplitter! </h1>
-				<nav>
-					<a href='index.html'>Home</a>
-					<a href='about.html'>About</a>
-				</nav>
 			</header>
+			<nav>
+				<a href='index.html'>Home</a>
+				<a href='about.html'>About</a>
+			</nav>
 			<div id="innerContainer">
 				<div id="smallDescr" title="Description of PriceSplitter">
 					<ul id="featureList">
 						<li> Join groups! </li>
 						<li> Record joint expenditure! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
+						<li> Visualise clearly how to balance accounts! </li>
 						<li> Visualise clearly how to balance accounts! </li>
 					</ul>
 				</div>
@@ -30,7 +39,9 @@
 						<input type="text" name="username" value="example@email.com"/><br/>
 						<label>Password: </label>
 						<input type="password" name="password"/><br />
-  						<input type="submit" name="submit" value="Log In!" />
+  						<input type="submit" name="submit" value="Log In!" /><br/><br/>
+  						<label>Don't have an account?</label>
+  						<input type="submit" name="register" value="Register Now!" />
 					</form>
 				</div>
 			</div>
