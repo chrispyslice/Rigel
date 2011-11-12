@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="desktop1.css" type="text/css">
-		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="jScript.js"></script>
 		<title>PriceSplitter!</title>
 	</head>
@@ -35,8 +35,8 @@
 				</div>
 				<div id="loginBox" title="Login to PriceSplitter" class="shadow">
 					<form id="toggleLog">
-  						<input id='loginTab' type="submit" name="login" value="Log in" />
-  						<input id='regTab' type="submit" name="register" value="Register"/><br/><br/>
+  						<div id='loginTab'>  aa  </div>
+  						<div id='regTab'>  aa  </div><br/><br/>
 					</form>
 					<form id="login">
 						<label>Email: </label>

@@ -31,10 +31,6 @@ p
 {
 	font-size: 20px;
 }
-div 
-{
-	margin: 20px;
-}
 nav
 {
 	
@@ -67,33 +63,42 @@ li
 	border: 2px solid #346825;
 	border-radius: 8px;
 }
-#loginBox
-{
-	float: right;
-	width: 280px;
-	text-align: right;
-	padding:20px;
-	background-color: #bee79d;
-	border: 2px solid #346825;
-	border-radius: 5px;	
-}
 #smallDescr
 {
-	width: 280px;
-	float: left;
+	width: 35%;
+	margin: 0 auto;
+	border: 2px;
+	padding: 5px;
 	background-color: #bee79d;	
 	border: 2px solid #346825;
-	border-radius: 5px;	
+	border-radius: 5px;
+	display: inline-block;
 }
+#loginBox
+{
+	position: relative;
+	left: 35%;	
+	top: -50px;
+	width: 25%;
+	margin: 0 auto;
+	border: 2px;
+	padding: 5px;
+	background-color: #bee79d;
+	border: 2px solid #346825;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: right;
+}
+
 .shadow
 {
-	-moz-box-shadow: 3px 3px 4px #000;
--webkit-box-shadow: 3px 3px 4px #000;
-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
 }
 #innerContainer
 {
 	height: 100%;
+	width: 95%;
+	margin: 10px auto;
 }
 #aboutUs
 {
@@ -110,13 +115,10 @@ box-shadow: 3px 3px 4px #000;
 {
 	clear: both;
 }
-#toggleLog
+#regTab, #loginTab
 {
-	float: left;
-}
-#loginTab
-{
-	display: none;
+	width: 50%;
+	background-color: #ffffff;	
 }
 #register
 {

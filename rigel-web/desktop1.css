@@ -65,7 +65,7 @@ li
 }
 #smallDescr
 {
-	width: 40%;
+	width: 35%;
 	margin: 0 auto;
 	border: 2px;
 	padding: 5px;
@@ -76,7 +76,10 @@ li
 }
 #loginBox
 {
-	width: 40%;
+	position: relative;
+	left: 35%;	
+	top: -50px;
+	width: 25%;
 	margin: 0 auto;
 	border: 2px;
 	padding: 5px;
@@ -112,12 +115,11 @@ li
 {
 	clear: both;
 }
-#toggleLog
+#regTab, #loginTab
 {
-}
-#loginTab
-{
-	display: none;
+	width: 50%;
+	display: inline;
+	background-color: #ffffff;	
 }
 #register
 {
