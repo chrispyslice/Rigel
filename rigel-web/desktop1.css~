@@ -33,9 +33,6 @@ nav
 	clear: both;
 	border: thin solid;
 	padding: 5px;
-}
-li
-{
 	padding-left: 10px;
 }
 #logo

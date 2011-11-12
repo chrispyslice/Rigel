@@ -7,7 +7,9 @@
 	<body>
 		<div id="container">
 			<header>
-				<img src="logo4.png" width="50" height="50" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
+				<a href="index.html">
+					<img src="logo4.png" width="50" height="50" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
+				</a>
 				<h1>About PriceSplitter</h1>
 				<nav>
 					<a href='index.html'>Home</a>

@@ -7,7 +7,9 @@
 	<body>
 		<div id="container">
 			<header>
-				<img src="logo4.png" width="50" height="50" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
+				<a id="logo" href="index.html">
+					<img src="logo4.png" width="50" height="50" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
+				</a>
 				<h1> PriceSplitter! </h1>
 				<nav>
 					<a href='index.html'>Home</a>
@@ -27,8 +29,8 @@
 						<label>Email: </label>
 						<input type="text" name="username" value="example@email.com"/> <br/>
 						<label>Password: </label>
-						<input type="password" name="password"/>
-  						<input type="submit" name="submit" value="Login" />
+						<input type="password" name="password"/><br />
+  						<input type="submit" name="submit" value="Log In!" />
 					</form>
 				</div>
 			</div>
