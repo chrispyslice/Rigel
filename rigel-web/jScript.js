@@ -1,8 +1,10 @@
 
  $(document).ready(function() {
- 	$('#regReq').submit(function(e) {
-			e.preventDefault();
-			$("#regReq").css('display', 'none');
-			$("#register").css('display', 'block');
+ 	$('#toggleLog').submit(function(e) {
+			$('#register').toggle(500);
+			$('#login').toggle(500);
+			$('#regTab').toggle(500);
+			$('#loginTab').toggle(500);			
+			return false;
 	});
  });

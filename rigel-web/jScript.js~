@@ -1,9 +1,11 @@
 
  $(document).ready(function() {
- 	alert("working");
- 	$('#regReq').submit(function(e) {
-			e.preventDefault();
-			$("#regReq").css('display', 'none');
-			$("#register").css('display', 'block');
+ 	$('#toggleLog').submit(function(e) {
+			//$("#regReq").css('display', 'none');
+			//$("#register").css('display', 'block');
+			$('#register').toggle(500);
+			$('#login').toggle(500);		
+			
+			return false;
 	});
  });

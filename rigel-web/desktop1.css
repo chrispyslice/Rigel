@@ -97,6 +97,22 @@ li
 	border: 2px solid #346825;
 	border-radius: 25px;	
 }
+#login
+{
+	clear: both;
+}
+#register
+{
+	clear: both;
+}
+#toggleLog
+{
+	float: left;
+}
+#loginTab
+{
+	display: none;
+}
 #register
 {
 	display: none;

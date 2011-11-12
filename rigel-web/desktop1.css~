@@ -60,11 +60,13 @@ li
 #container 
 {
 	margin: 20px auto;
-	width: 90%;	
+	width: 90%;
+	min-width: 960px;
+	max-width: 1280px;
 	background-color: #eeffe9;
 	height: 100%;
 	border: 2px solid #346825;
-	border-radius: 25px;
+	border-radius: 8px;
 }
 #loginBox
 {
@@ -95,15 +97,16 @@ li
 	border: 2px solid #346825;
 	border-radius: 25px;	
 }
-#registerBox
+#toggleLog
 {
-	float: right;
-	width: 280px;
-	text-align: right;
-	padding:20px;
-	background-color: #bee79d;
-	border: 2px solid #346825;
-	border-radius: 25px;	
+	float: left;
+}
+#loginTab
+{
+	display: none;
+}
+#register
+{
 	display: none;
 }
 footer
