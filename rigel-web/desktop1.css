@@ -9,15 +9,15 @@ a
 }
 header
 {
+	margin-left:20px;
 } 
 body
 {
-	background-color: #f6fff3;
+	background-color: #bee79d;
 	
 }
 h1
 {
-	float: left;
 	font-family: "Times New Roman", serif;
 	font-size: 24px;
 	padding-top:10px;
@@ -56,21 +56,29 @@ li
 {
 	margin: 20px auto;
 	width: 90%;	
-	background-color: #c9f4a6;
+	background-color: #eeffe9;
 	height: 100%;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
+	border: 2px solid #346825;
+	border-radius: 25px;
 }
 #loginBox
 {
 	float: right;
 	width: 280px;
-	text-align: right;	
+	text-align: right;
+	padding:20px;
+	background-color: #bee79d;
+	border: 2px solid #346825;
+	border-radius: 25px;	
 }
 #smallDescr
 {
 	width: 280px;
 	float: left;
+	height: 400px;
+	background-color: #bee79d;	
+	border: 2px solid #346825;
+	border-radius: 25px;	
 }
 #innerContainer
 {
@@ -78,8 +86,7 @@ li
 }
 footer
 {
-	border-top: thin solid;
-	border-color: #346825;
+	border-top: 2px solid #346825;
 	text-align: center;
 	clear: both;
 }
