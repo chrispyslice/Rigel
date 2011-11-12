@@ -90,9 +90,21 @@ li
 }
 #aboutUs
 {
+	padding:20px;
 	background-color: #bee79d;	
 	border: 2px solid #346825;
 	border-radius: 25px;	
+}
+#registerBox
+{
+	float: right;
+	width: 280px;
+	text-align: right;
+	padding:20px;
+	background-color: #bee79d;
+	border: 2px solid #346825;
+	border-radius: 25px;	
+	display: none;
 }
 footer
 {

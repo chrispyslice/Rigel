@@ -95,6 +95,10 @@ li
 	border: 2px solid #346825;
 	border-radius: 25px;	
 }
+#register
+{
+	display: none;
+}
 footer
 {
 	border-top: 2px solid #346825;

@@ -1,0 +1,9 @@
+
+ $(document).ready(function() {
+ 	alert("working");
+ 	$('#regReq').submit(function(e) {
+			e.preventDefault();
+			$("#regReq").css('display', 'none');
+			$("#register").css('display', 'block');
+	});
+ });
