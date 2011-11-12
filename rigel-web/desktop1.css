@@ -35,6 +35,8 @@ nav
 	clear: both;
 	border: thin solid;
 	padding: 5px;
+	border: 2px solid #000000;
+	border-radius: 25px;
 }
 li
 {
