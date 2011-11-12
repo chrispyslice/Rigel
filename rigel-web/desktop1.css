@@ -1,16 +1,17 @@
+/*CHANGES*/
 html 
 {
 	font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%;
 }
 header
 {
-	color: #ffffff;
-	background-color: #006600;
+	color: #000000;
+	background-color: #ffffff;
 } 
 body
 {
-	max-width: 960px;
-	background-color: #006600;
+	background-color: #ffffff;
+	
 }
 h1
 {
@@ -22,13 +23,20 @@ p
 	font-family: "Times New Roman", serif;
 	font-size: 20px;
 }
-div
+div 
 {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
-	max-width: 80%;
+	margin: 20px;
+}
+#container 
+{
+	margin: 20px auto;
+	width: 80%;
+	background-color: #DBF7DA;
+}
+#loginBox
+{
+	width: 300px;
+	text-align: right;
 }
 footer
 {
