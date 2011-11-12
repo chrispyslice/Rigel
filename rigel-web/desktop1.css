@@ -85,6 +85,10 @@ li
 	border: 2px solid #346825;
 	border-radius: 5px;	
 }
+.shadow
+{
+	box-shadow: 3px 3px 4px #000;
+}
 #innerContainer
 {
 	height: 100%;

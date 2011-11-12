@@ -19,17 +19,16 @@ header
 body
 {
 	background-color: #bee79d;
+	font-family: sans-serif;
 	
 }
 h1
 {
-	font-family: "Times New Roman", serif;
 	font-size: 24px;
 	padding-top:10px;
 }
 p
 {
-	font-family: "Times New Roman", serif;
 	font-size: 20px;
 }
 div 
@@ -76,7 +75,7 @@ li
 	padding:20px;
 	background-color: #bee79d;
 	border: 2px solid #346825;
-	border-radius: 25px;	
+	border-radius: 5px;	
 }
 #smallDescr
 {
@@ -84,7 +83,13 @@ li
 	float: left;
 	background-color: #bee79d;	
 	border: 2px solid #346825;
-	border-radius: 25px;	
+	border-radius: 5px;	
+}
+.shadow
+{
+	-moz-box-shadow: 3px 3px 4px #000;
+-webkit-box-shadow: 3px 3px 4px #000;
+box-shadow: 3px 3px 4px #000;
 }
 #innerContainer
 {
@@ -95,7 +100,15 @@ li
 	padding:20px;
 	background-color: #bee79d;	
 	border: 2px solid #346825;
-	border-radius: 25px;	
+	border-radius: 5px;	
+}
+#login
+{
+	clear: both;
+}
+#register
+{
+	clear: both;
 }
 #toggleLog
 {
