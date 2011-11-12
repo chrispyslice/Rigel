@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="desktop1.css" type="text/css">
 		<title>PriceSplitter!</title>
 	</head>
 	<body>
 		<div id="container">
 			<header>
-				<img src="" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
+				<img src="logo4.png" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
 				<h1>About PriceSplitter</h1>
 				<nav>
 					<a href='index.html'>Home</a>
