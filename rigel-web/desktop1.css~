@@ -45,17 +45,13 @@ li
 #container 
 {
 	margin: 20px auto;
-	width: 80%;	
-	background-color: #95F590;
+	width: 80%;
+	background-color: #DBF7DA;
 }
 #loginBox
 {
-	width: 280px;
-	text-align: right;	
-}
-#innerContainer
-{
 	width: 300px;
+	text-align: right;
 }
 footer
 {
