@@ -1,0 +1,99 @@
+/*CHANGES*/
+html 
+{
+	font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%;
+}
+a
+{
+	/*padding: 10px;*/
+}
+header
+{
+	background-color: #c9f4a6;
+	padding: 0;
+	padding-bottom: 2px;
+} 
+body
+{
+	margin: 0;
+	height: 100%;
+}
+h1
+{
+	float: left;
+	font-family: "Times New Roman", serif;
+	font-size: 24px;
+	padding-top:10px;
+}
+p
+{
+	font-family: "Times New Roman", serif;
+	font-size: 20px;
+}
+div 
+{
+	/*margin: 20px;*/
+}
+nav
+{
+	
+	background-color: #bee79d;
+	width: 95%;
+	margin: 5px auto 5px auto;
+	padding: 2px;
+	padding-left: 20px;
+	clear: both;
+	border-top: thin solid;
+	border-bottom: thin solid;
+	border: 2px solid #346825;
+	border-radius: 25px;
+	word-spacing: 10px;
+}
+li
+{
+	padding-left: 10px;
+}
+#logo
+{
+	float: left;
+}
+#container 
+{
+	/*margin: 20px auto;*/	
+	padding: auto;
+	margin: auto;
+}
+#loginBox
+{
+	margin: 10px;
+	margin-right: 20%;
+	padding: 10px;
+	float: right;
+	width: 280px;
+	text-align: right;	
+	background-color: #bee79d;
+	border-radius: 25px;
+	border: 2px solid #346825;
+}
+#smallDescr
+{
+	margin: 10px;
+	margin-left: 20%;
+	padding: 10px;
+	float: left;
+	width: 280px;
+	background-color: #bee79d;
+	border-radius: 25px;
+	border: 2px solid #346825;
+}
+#innerContainer
+{
+	height: 100%;
+}
+footer
+{
+	border-top: thin solid;
+	border-color: #346825;
+	text-align: center;
+	clear: both;
+}

@@ -1,0 +1,15 @@
+$(document).ready(function(){
+alert("xx");
+
+	$('#regReq').submit(function(e) {
+		$("#register").css('display', '');
+		$("#Login").css('display', 'none');
+	}
+
+});
+
+
+
+
+
+

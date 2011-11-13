@@ -9,8 +9,10 @@
  * @package  app
  * @extends  Controller
  */
-class Controller_Welcome extends Controller
+class Controller_Welcome extends Controller_Template
 {
+
+	public $template = 'template_welcome';
 
 	/**
 	 * The basic welcome message
@@ -20,7 +22,8 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
+		$data = array();
+		$this->template->title = "Welcome";
 	}
 
 	/**

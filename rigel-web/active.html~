@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="desktop1.css" type="text/css">
+		<title>PriceSplitter!</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<a id="logo" href="index.html">
+					<img src="logo4.png" width="50" height="50" alt="PriceSplitter Logo" title="PriceSplitter Logo" />
+				</a>
+				<h1>PriceSplitter</h1>
+				<nav>
+					<a href='index.html'>Home</a>
+					<a href='about.html'>About</a>
+				</nav>
+			</header>
+			<div id="innerContainer">
+				<div id="loggedInUserBlock" title="PriceSplitter Application">
+				</div>
+			</div>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>

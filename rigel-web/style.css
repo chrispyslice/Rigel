@@ -1,0 +1,36 @@
+html 
+{
+	font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%;
+}
+header
+{
+	color: #ffffff;
+	background-color: #006600;
+} 
+body
+{
+	max-width: 960px;
+	background-color: #006600;
+}
+h1
+{
+	font-family: "Times New Roman", serif;
+	font-size: 24px;
+}
+p
+{
+	font-family: "Times New Roman", serif;
+	font-size: 20px;
+}
+div
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	max-width: 80%;
+}
+footer
+{
+	max-width: 90%;
+}
