@@ -22,8 +22,20 @@ class Controller_Authentication extends Controller_Rest
 	public function get_login($username, $password)
 	{
 		$auth = Auth::instance();
+		$user_data = Format::factory(Model_User::find()->where('username', $username)->get())->to_array();
+		if(!empty($user_data)) {
+			session_start();
+			//print_r($user_data);
+			foreach($user_data as $data) {
+				$id = $data['id'];
+			}
+			$_SESSION['user'] = $id;
+			Output::redirect('dashboard');
+		} else {
+			echo "No user found";
+		}
 		
-		var_dump(Format::factory(Model_User::find()->where('username', $username)->where('password', base64_encode($this->hasher()->pbkdf2($password, Config::get('auth.salt'), 10000, 32))))->to_array());
+		//var_dump(Format::factory(Model_User::find()->where('username', $username)->where('password', base64_encode($this->hasher()->pbkdf2($password, Config::get('auth.salt'), 10000, 32))))->to_array());
 	}
 	
 	public function hasher()
