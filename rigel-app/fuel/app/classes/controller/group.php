@@ -32,6 +32,13 @@ class Controller_Group extends Controller_Rest
 			Format::factory(Model_Group::find($id))->to_array()
 		));
 	}
+	
+	public function get_expenses($id)
+	{
+		$this->response(array(
+			Format::factory(Model_Expense::find()->where('group', $id)->get())->to_array()
+		));
+	}
 }
 
 /* End of file group.php */
