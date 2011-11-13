@@ -14,14 +14,10 @@ return array(
 	'default' => array(
 		'type'        => 'pdo',
 		'connection'  => array(
-			'hostname'	 => 'localhost',
-			'port'		 => 3306,
-			'database'	 => 'Rigel',
-			'username'	 => 'root',
-			'password'	 => '',
 			'persistent' => false,
 		),
 		'identifier'   => '`',
+		'table_prefix' => '',
 		'charset'      => 'utf8',
 		'caching'      => false,
 		'profiling'    => false,
@@ -33,4 +29,5 @@ return array(
 			'port'      => 6379,
 		)
 	),
+
 );

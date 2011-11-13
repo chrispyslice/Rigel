@@ -5,19 +5,10 @@
 
 return array(
 	'default' => array(
-		'type'        => 'mysqli',
 		'connection'  => array(
-			'hostname'	 => 'localhost',
-			'port'		 => 3306,
-			'database'	 => 'Rigel',
-			'username'	 => 'root',
-			'password'	 => '',
-			'persistent' => false,
+			'dsn'        => 'mysql:host=localhost;dbname=fuel_dev',
+			'username'   => 'root',
+			'password'   => 'root',
 		),
-		'table_prefix' => '',
-		'identifier'   => '`',
-		'charset'      => 'utf8',
-		'caching'      => false,
-		'profiling'    => false,
 	),
 );
